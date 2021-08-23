@@ -20,7 +20,7 @@ namespace HillCalculation
         public static TabControl BarShapeXPerspective(ref TabControl Profiles, ref HillPoint[,] measuringPoints,string xOrYPerspective, int numberOfRows, int numberOfColumns , double maxHeight)
         {
 
-
+            ///testFunction
             PlotView[] myPlotVIew = new PlotView[numberOfRows];
 
             for (int i = numberOfRows - 1; i > -1; i--)
