@@ -41,7 +41,7 @@ Somit gesamt Volumen der Prisma ergibt sich:
 
 Das Volumen des Hügels berechnet sich aus den Volumen 1, 2, 3, 4, 5 und 6 im Grün
 
-<img src="https://github.com/Fazil-edu/Contour-Lines/blob/main/Pictures/Problem-Analysis/Volume.png" width="630" height="500">
+<img src="https://github.com/Fazil-edu/Contour-line/blob/master/Pictures/Problem%20analysis/Volume.png" width="630" height="500">
 
 Dafür bräucte man nur die roten Knoten zu wissen. Für die Höhe <img src="https://latex.codecogs.com/svg.image?i" title="i" />, liegen die anderen Höhen einer Prisma
 
