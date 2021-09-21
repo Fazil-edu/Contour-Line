@@ -73,7 +73,7 @@ Das Struktogramm dafür:
 
 ## 2. Entwurf
 
-** Klassendiagramm **
+**Klassendiagramm**
 
 <img src="https://github.com/Fazil-edu/Contour-Lines/blob/main/Pictures/Draft/Class%20diagram.png" width="550" height="350">
 
