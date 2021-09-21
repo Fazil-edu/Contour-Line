@@ -1,4 +1,4 @@
-# Contour-Lines
+# Contour line
 Ausgangspunkt für dieses Projekt ist die Aufgabe ist: https://www.matse-ausbildung.de/hoehenlinien.html
 
   1. [Problemanalyse](#1-Problemanalyse)
