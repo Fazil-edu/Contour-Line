@@ -12,19 +12,19 @@ Ausgangspunkt für dieses Projekt ist die Aufgabe ist: https://www.matse-ausbild
 ### Überführung der Daten aus der Datei in die Datenstruktur
 Die Messdaten sind sowohl vertikal als auch horizontal mit dem gleichen Abstand in einem Rost gegeben. Gegeben seien z.B. 12 Höhenwerte wie unten.
 
-<img src="https://github.com/Fazil-edu/Contour-Lines/blob/main/Pictures/Problem-Analysis/Measuringdata%20WD.png" width="600" height="550">
+<img src="https://github.com/Fazil-edu/Contour-line/blob/master/Pictures/Problem%20analysis/Measuringdata%20WD.png" width="600" height="550">
 
 Um das nicht so kompliziert zu machen, nehme man an, dass die bei (x,y)- Koordinaten x und y für ganze Zaheln stehen (das werden wir unten zur Nutze machen).
 
 Und sie sind in einer Datei **sequentiell** gespeichert, wie z.B. unter in einer Textdatei.
 
-<img src="https://github.com/Fazil-edu/Contour-Lines/blob/main/Pictures/Problem-Analysis/Measuringdata%20TF.png" width="300" height="450">
+<img src="https://github.com/Fazil-edu/Contour-line/blob/master/Pictures/Problem%20analysis/Measuringdata%20TF.png" width="300" height="450">
 
 Für die Verwaltung solcher Daten aus der Textdatei ist ein (n,m) - Array, der aus (x,y,h)-Tupeln besteht, geeignet. Bei obigem Bild ist z.B. n = 3 und m =  4. Da Daten **sequentiell** in der Textdatei gespeichert ist, ist es nicht ohne die n und m - Werte zu finden. Denn, wenn die Textdatei z.B. 64 Zeilen hat, kann es mehrere Formen wie diese Fo (8,8), (4,16),(16,4),(2,32), (32,2), (1,64) oder (64,1) haben. Um das Problem zu lösen suche man den ersten x-Wert in den anderen Zeilen. Hat man es gefunden, so steht die Index der jeweiligen Zeile für die Anzahl der Spalten in dem Raster. Danach kann man dann die Daten in einem Array speichern. Das Struktogramm dafür:
 <img src="https://github.com/Fazil-edu/Contour-Lines/blob/main/Pictures/Problem-Analysis/Transport%20time%20NS-diagram.jpg" width="630" height="500">
 ### Volumenberechnung
 
-<img src="https://github.com/Fazil-edu/Contour-Lines/blob/main/Pictures/Problem-Analysis/Prisma.png" width="630" height="500">
+<img src="https://github.com/Fazil-edu/Contour-line/blob/master/Pictures/Problem%20analysis/Prisma.png" width="630" height="500">
 
 Um das Volumen einer Prisma zu berechnen, kann man die Querschnittsmethode verwenden. Dafür rechne man das Mittel der Höhen der Vorderseite und das Volumen aus diesem Mittel und ebenso jenes Mittel der Höhen der Rückseite somit das Volumen aus jenem Mittel. Das Volumen der ganzen Prisma nehme man dann das Mittel aus diesen beiden Volumen. In Formeln:
 
@@ -49,24 +49,24 @@ Dafür bräucte man nur die roten Knoten zu wissen. Für die Höhe <img src="htt
 
 Das Struktogramm für die Volumenberechnung:
 
-<img src="https://github.com/Fazil-edu/Contour-Lines/blob/main/Pictures/Problem-Analysis/Volume%20calculation%20NS-diagram.jpg" width="2000" height="350">
+<img src="https://github.com/Fazil-edu/Contour-line/blob/master/Pictures/Problem%20analysis/Volume%20calculation%20NS-diagram.jpg" width="2000" height="350">
 
 ### Transportdauer
 Ein LKW kann in einer Fahrt, die 30 Minuten dauert, 7 m3 Erde abtransportieren. Wie lange dauert bis ein LKW ein x m3 Erde abtransportieren kann. Aus Dreissatzrechntung folgt, dass ein LKW   <img src="https://latex.codecogs.com/svg.image?\frac{30&space;x}{7}" title="\frac{30 x}{7}" /> Minuten braucht, um einen Hügel abzutransportieren. Wie lange braucht dann bis n LKWs einen x m3 Erde abtransportieren? Ebenso aus der Dreissatzrechnung folgt: <img src="https://latex.codecogs.com/svg.image?\frac{30&space;x}{7&space;n}" title="\frac{30 x}{7}" />. Umgerechnet auf Stunden und Tagen ergibt sich: <img src="https://latex.codecogs.com/svg.image?\frac{30&space;x}{14}" title="\frac{30 x}{14}" /> Stunden und <img src="https://latex.codecogs.com/svg.image?\frac{30&space;x}{336}" title="\frac{30 x}{336}" /> Tage. Struktogramm dafür: 
 
-<img src="https://github.com/Fazil-edu/Contour-Lines/blob/main/Pictures/Problem-Analysis/Transport%20time%20NS-diagram.jpg" width="430" height="300">
+<img src="https://github.com/Fazil-edu/Contour-line/blob/master/Pictures/Problem%20analysis/Transport%20time%20NS-diagram.jpg" width="430" height="300">
 
 ### Balkenform
 
 Für die Balkenform kann man aus 2 Perspektiven und in jeder Tiefe Profile bzw. Schichten zeichnen und damit die ungefähre Form des Hügels darstellen. Im Bild unten würde z.B. einen Hügel in bzw. aus einer bestimmten Tiefe bzw. Perspektive in Balkenform sehen.
 
-<img src="https://github.com/Fazil-edu/Contour-Lines/blob/main/Pictures/Problem-Analysis/Layers.png" width="550" height="350">
+<img src="https://github.com/Fazil-edu/Contour-line/blob/master/Pictures/Problem%20analysis/Layers.png" width="550" height="350">
 
 Dies wir natürlich mit hohen Anzahl der Messpunkten entsprechend "runder".
 
 Das Struktogramm dafür:
 
-<img src="https://github.com/Fazil-edu/Contour-Lines/blob/main/Pictures/Problem-Analysis/Barshape-NS-diagram.png" width="550" height="350">
+<img src="https://github.com/Fazil-edu/Contour-line/blob/master/Pictures/Problem%20analysis/Barshape-NS-diagram.png" width="550" height="350">
 
 
 ### Höhenlinien
@@ -75,21 +75,21 @@ Das Struktogramm dafür:
 
 **Klassendiagramm**
 
-<img src="https://github.com/Fazil-edu/Contour-Lines/blob/main/Pictures/Draft/Class%20diagram.png" width="550" height="350">
+<img src="https://github.com/Fazil-edu/Contour-line/blob/master/Pictures/Draft/Class%20diagram.png" width="550" height="350">
 
 **Sequenzdiagramm für Dateiauswählen**
 
-<img src="https://github.com/Fazil-edu/Contour-Lines/blob/main/Pictures/Draft/Sequence diagram - file selection.png" width="550" height="350">
+<img src="https://github.com/Fazil-edu/Contour-line/blob/master/Pictures/Draft/Sequence diagram - file selection.png" width="550" height="350">
 
 **Sequenzdiagramm für Transportzeit**
 
-<img src="https://github.com/Fazil-edu/Contour-Lines/blob/main/Pictures/Draft/Sequence diagram - transport time.png" width="550" height="350">
+<img src="https://github.com/Fazil-edu/Contour-line/blob/master/Pictures/Draft/Sequence diagram - transport time.png" width="550" height="350">
 
 **Sequenzdiagramm für Volumenberechnung**
 
-<img src="https://github.com/Fazil-edu/Contour-Lines/blob/main/Pictures/Draft/Sequence diagram - volume calculation.png" width="550" height="350">
+<img src="https://github.com/Fazil-edu/Contour-line/blob/master/Pictures/Draft/Sequence diagram - volume calculation.png" width="550" height="350">
 
 **Sequenzdiagramm für Balkenform**
 
-<img src="https://github.com/Fazil-edu/Contour-Lines/blob/main/Pictures/Draft/Sequence diagram - bar shape.png" width="550" height="350">
+<img src="https://github.com/Fazil-edu/Contour-line/blob/master/Pictures/Draft/Sequence diagram - bar shape.png" width="550" height="350">
 
