@@ -52,7 +52,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllContourLines.cs" />
+    <Compile Include="AllInterpolatedPoints.cs" />
     <Compile Include="Calculation.cs" />
+    <Compile Include="ContourLinesAtTheSameHeight.cs" />
+    <Compile Include="ContourLine.cs" />
     <Compile Include="DataHandling.cs" />
     <Compile Include="Drawing.cs" />
     <Compile Include="Hill.cs">
@@ -61,9 +65,13 @@
     <Compile Include="Hill.Designer.cs">
       <DependentUpon>Hill.cs</DependentUpon>
     </Compile>
+    <Compile Include="InterpolatedPointsAtTheSameHeight.cs" />
+    <Compile Include="Line.cs" />
+    <Compile Include="LinesOfTheHeight.cs" />
+    <Compile Include="LinesSortedByAllHeights.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="HillPoint.cs" />
+    <Compile Include="Vector.cs" />
     <EmbeddedResource Include="Hill.resx">
       <DependentUpon>Hill.cs</DependentUpon>
     </EmbeddedResource>

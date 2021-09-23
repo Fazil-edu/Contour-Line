@@ -1,25 +1,16 @@
-﻿using OxyPlot;
-using OxyPlot.Axes;
-using OxyPlot.Series;
-using OxyPlot.WindowsForms;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+
 
 namespace HillCalculation
 {
-    static class DataHandling
+    public static class DataHandling
     {
-        public static List<HillPoint> CheckTheFile(string path, ref bool fileSelected)
+        public static List<Vector> CheckTheFile(string path, ref bool fileSelected, Vector[,] measuringPoints)
         {
-            List<HillPoint> rawData = new List<HillPoint>();
+            List<Vector> rawData = new List<Vector>();
             if (path.Length != 0)
             {
                 if (!path.EndsWith(".txt"))
@@ -28,6 +19,7 @@ namespace HillCalculation
                 }
                 else
                 {
+
                     fileSelected = true;
                     StreamReader stream = new StreamReader(path);
                     string line;
@@ -37,7 +29,9 @@ namespace HillCalculation
                         string[] tuple = line.Split(',');
                         try
                         {
-                            rawData.Add(new HillPoint(Convert.ToInt32(tuple[1]), Convert.ToInt32(tuple[0]), Convert.ToDouble(tuple[2])));
+                            tuple[2] = tuple[2].Replace(".", ",");   // Dezimaltrennzeichen vom Komma zu Punkt konvertieren
+
+                            rawData.Add(new Vector(Convert.ToInt32(tuple[0]), Convert.ToInt32(tuple[1]), Convert.ToDouble(tuple[2])));
                         }
                         catch (Exception)
                         {
@@ -46,16 +40,17 @@ namespace HillCalculation
                             break;
                         }
                     }
+
                 }
             }
 
             return rawData;
         }
-        public static void TransformData(ref List<HillPoint> rawData, ref HillPoint[,] measuringPoints, ref int numberOfRows, ref int numberOfColumns)
+        public static Vector[,] TransformData(List<Vector> rawData, ref int numberOfRows, ref int numberOfColumns)
         {
             for (int i = 1; i < rawData.Count; i++)
             {
-                if (rawData[0].Y == rawData[i].Y)
+                if (rawData[0].X == rawData[i].X)
                 {
                     numberOfColumns = i;
                     break;
@@ -63,18 +58,24 @@ namespace HillCalculation
             }
 
             numberOfRows = Convert.ToInt32(rawData.Count / numberOfColumns);
-            measuringPoints = new HillPoint[numberOfRows, numberOfColumns];
+            Vector[,] measuringPoints = new Vector[numberOfRows, numberOfColumns];
             int cnt = 0;
             for (int i = 0; i < numberOfRows; i++)
             {
                 for (int j = 0; j < numberOfColumns; j++)
                 {
-                    measuringPoints[i, j] = rawData[cnt];
+                    Vector a = rawData[cnt];
+                    measuringPoints[numberOfRows - 1 - i, j] = rawData[cnt];
+                    if (rawData[cnt].Z == 20)
+                    {
+
+                    }
                     cnt++;
                 }
             }
+            return measuringPoints;
         }
-        public static void SetDataGridViewDGW(ref DataGridView measuringPointsDGV, ref HillPoint[,] measuringPoints, int numberOfRows, int numberOfColumns)
+        public static void SetDataGridViewDGW(DataGridView measuringPointsDGV, Vector[,] measuringPoints, int numberOfRows, int numberOfColumns)
         {
             measuringPointsDGV.ClearSelection();
             measuringPointsDGV.RowCount = measuringPoints.GetLength(0) + 1;
@@ -82,12 +83,13 @@ namespace HillCalculation
 
             for (int i = 0; i < numberOfRows; i++)
             {
-                measuringPointsDGV.Columns[i].ReadOnly = true;
-                measuringPointsDGV[0, i + 1].Value = "  y" + Convert.ToString(i + 1);
+                
+                measuringPointsDGV[0, i + 1].Value = "  y" + Convert.ToString(numberOfRows - i);
                 for (int j = 0; j < numberOfColumns; j++)
                 {
+                    measuringPointsDGV.Columns[j].ReadOnly = true;
                     measuringPointsDGV[j + 1, 0].Value = "   x" + Convert.ToString(j + 1);
-                    measuringPointsDGV[i + 1, j + 1].Value = measuringPoints[j, i].Z;
+                    measuringPointsDGV[j + 1, i + 1].Value = measuringPoints[i, j].Z;
                 }
             }
             measuringPointsDGV.Visible = true;

@@ -4,25 +4,16 @@ using OxyPlot.Series;
 using OxyPlot.WindowsForms;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace HillCalculation
 {
-    static class Drawing
+    public static class Drawing
     {
-        public static TabControl BarShapeXPerspective(ref TabControl Profiles, ref HillPoint[,] measuringPoints,string xOrYPerspective, int numberOfRows, int numberOfColumns , double maxHeight)
+        public static void BarShapeXPerspective(TabControl Profiles, Vector[,] measuringPoints,string xOrYPerspective, int numberOfRows, int numberOfColumns , double maxHeight)
         {
-
-            ///testFunction
-            PlotView[] myPlotVIew = new PlotView[numberOfRows];
-
+            Profiles.TabPages.Clear();
             for (int i = numberOfRows - 1; i > -1; i--)
             {
                 PlotView currentPlottView = new PlotView()
@@ -30,11 +21,11 @@ namespace HillCalculation
                     Width = 850,
                     Height = 480,
                     BackColor = Color.White,
-                    Location = new Point(8, 6),
+                    Location = new System.Drawing.Point(8, 6),
                     Model = new PlotModel(),
                 };
 
-                LinearAxis yAxis = new LinearAxis { Minimum = 0, Maximum = maxHeight + 10};
+                LinearAxis yAxis = new LinearAxis { Minimum = 0, Maximum = maxHeight + maxHeight*0.1};
                 yAxis.IsZoomEnabled = false;
                 currentPlottView.Model.Axes.Add(yAxis);
 
@@ -43,7 +34,7 @@ namespace HillCalculation
                 currentPlottView.Model.Axes.Add(xAxis);
 
                 
-                Profiles.TabPages.Add(xOrYPerspective + (i + 1).ToString());
+                Profiles.TabPages.Add(xOrYPerspective + (numberOfRows - i).ToString());
                 Profiles.TabPages[numberOfRows - i - 1].Controls.Add(currentPlottView);
                 ColumnSeries columnSeries = new ColumnSeries();
                 columnSeries.FillColor = OxyColors.Blue;
@@ -53,51 +44,85 @@ namespace HillCalculation
                 }
 
                 currentPlottView.Model.Series.Add(columnSeries);
-                
-                myPlotVIew[numberOfRows - i - 1] = currentPlottView;
             }
-            return Profiles;
+            Profiles.Visible = true;
         }
-        public static TabControl BarShapeYPerspective(ref TabControl Profiles, ref HillPoint[,] measuringPoints, string xOrYPerspective, int numberOfRows , int numberOfColumns, double maxHeight)
+        public static void BarShapeYPerspective(TabControl Profiles, Vector[,] measuringPoints, string xOrYPerspective, int numberOfRows , int numberOfColumns, double maxHeight)
         {
-            PlotView[] myPlotVIew = new PlotView[numberOfColumns];
-
-            for (int i = numberOfColumns - 1; i > -1; i--)
+            Profiles.TabPages.Clear();
+            for (int j = 0; j < numberOfColumns; j++)
             {
                 PlotView currentPlottView = new PlotView()
                 {
                     Width = 850,
                     Height = 480,
                     BackColor = Color.White,
-                    Location = new Point(8, 6),
+                    Location = new System.Drawing.Point(8, 6),
                     Model = new PlotModel(),
                 };
 
-                //CategoryAxis yAxis = new CategoryAxis { };
-                //yAxis.IsZoomEnabled = false;
-                //currentPlottView.Model.Axes.Add(yAxis);
 
-
-                //LinearAxis xAxis = new LinearAxis { Minimum = 0, Maximum = maxHeight + 10 };
-                //xAxis.IsZoomEnabled = false;
-                //currentPlottView.Model.Axes.Add(xAxis);
-
-
-                Profiles.TabPages.Add(xOrYPerspective + (i + 1).ToString());
-                Profiles.TabPages[numberOfColumns - i - 1].Controls.Add(currentPlottView);
+                Profiles.TabPages.Add(xOrYPerspective + (j + 1).ToString());
+                Profiles.TabPages[j].Controls.Add(currentPlottView);
                 BarSeries barSeries = new BarSeries();
 
                 barSeries.FillColor = OxyColors.Blue;
-                for (int j = 0; j < numberOfRows; j++)
+                for (int i = numberOfRows-1; i > -1; i--)
                 {
                     barSeries.Items.Add(new BarItem(measuringPoints[i, j].Z));
                 }
 
                 currentPlottView.Model.Series.Add(barSeries);
-
-                myPlotVIew[numberOfColumns - i - 1] = currentPlottView;
             }
-            return Profiles;
+            Profiles.Visible = true;
         }
+
+        public static void DrawContourLines(PlotView myPlotView, AllContourLines allCntrLines)
+        {
+            foreach (ContourLinesAtTheSameHeight contourLinesAtTheSameHeight in allCntrLines.AllCntrLines)
+            {
+                foreach (ContourLine currentContourLine in contourLinesAtTheSameHeight.CntrLinesAtTheSameHeight)
+                {
+                    LineSeries splineLineSeries = new LineSeries()
+                    {
+                        MarkerSize = 2.5,
+                        Color = currentContourLine.LineSeries.Color
+                    };
+                    Calculation.CatmullRomSplines(currentContourLine.LineSeries, splineLineSeries);
+                    myPlotView.Model.Series.Add(currentContourLine.LineSeries);
+                    myPlotView.Model.Series.Add(splineLineSeries);
+                }
+            }
+            myPlotView.Visible = true;
+            myPlotView.Model.InvalidatePlot(true);
+        }
+
+        #region Area
+
+        //public static void DrawRedAreaConnection(Tuple<List<LineSeries>, List<LineSeries>> allLineSeries , ref PlotView myPlotView)
+        //{
+        //    foreach (var xAxisLineSeries in allLineSeries.Item1)
+        //    {
+        //        myPlotView.Model.Series.Add(xAxisLineSeries);
+        //    }
+
+        //    foreach (var yAxisLineSeries in allLineSeries.Item2)
+        //    {
+        //        myPlotView.Model.Series.Add(yAxisLineSeries);
+        //    }
+        //}
+        //public static void DrawGreenAreaConnection(Tuple<List<LineSeries>, List<LineSeries>> allLineSeries, ref PlotView myPlotView)
+        //{
+        //    foreach (var xAxisLineSeries in allLineSeries.Item1)
+        //    {
+        //        myPlotView.Model.Series.Add(xAxisLineSeries);
+        //    }
+
+        //    foreach (var yAxisLineSeries in allLineSeries.Item2)
+        //    {
+        //        myPlotView.Model.Series.Add(yAxisLineSeries);
+        //    }
+        //}
+        #endregion
     }
 }
