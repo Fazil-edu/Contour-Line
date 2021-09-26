@@ -13,9 +13,11 @@ Die Messdaten sind sowohl vertikal als auch horizontal mit dem gleichen Abstand 
 <img src="https://github.com/Fazil-edu/Contour-line/blob/master/Pictures/Problem%20analysis/Measuringdata%20WD.png" width="600" height="550">
 Um das nicht so kompliziert zu machen, nehme man an, dass die bei (x,y)- Koordinaten x und y für ganze Zaheln stehen (das werden wir unten zur Nutze machen).
 Und sie sind in einer Datei **sequentiell** gespeichert, wie z.B. unter in einer Textdatei.
+
 <img src="https://github.com/Fazil-edu/Contour-line/blob/master/Pictures/Problem%20analysis/Measuringdata%20TF.png" width="300" height="450">
 
-Für die Verwaltung solcher Daten aus der Textdatei ist ein (n,m) - Array, der aus (x,y,h)-Tupeln besteht, geeignet. Bei obigem Bild ist z.B. n = 3 und m =  4. Da Daten **sequentiell** in der Textdatei gespeichert ist, ist es nicht ohne die n und m - Werte zu finden. Denn, wenn die Textdatei z.B. 64 Zeilen hat, kann es mehrere Formen wie diese Fo (8,8), (4,16),(16,4),(2,32), (32,2), (1,64) oder (64,1) haben. Um das Problem zu lösen suche man den ersten x-Wert in den anderen Zeilen. Hat man es gefunden, so steht die Index der jeweiligen Zeile für die Anzahl der Spalten in dem Raster. Danach kann man dann die Daten in einem Array speichern. Das Struktogramm dafür:
+Für die Verwaltung solcher Daten aus der Textdatei ist ein (n,m) - Array, der aus (x,y,h)-Tupeln besteht, geeignet. Bei obigem Bild ist z.B. n = 3 und m =  4. Da Daten **sequentiell** in der Textdatei gespeichert ist, ist es nicht ohne die n und m - Werte zu finden. Denn, wenn die Textdatei z.B. 64 Zeilen hat, kann es mehrere Formen wie diese Fo (8,8), (4,16),(16,4),(2,32), (32,2), (1,64) oder (64,1) haben. Um das Problem zu lösen suche man den ersten x-Wert in den anderen Zeilen. Hat man es gefunden, so steht die Index der jeweiligen Zeile für die Anzahl der Spalten in dem Raster. 
+Danach kann man dann die Daten in einem Array speichern. Das Struktogramm dafür:
 
 <img src="https://github.com/Fazil-edu/Contour-line/blob/master/Pictures/Problem%20analysis/Transport%20time%20NS-diagram.jpg" width="630" height="500">
 
