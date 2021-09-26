@@ -1,0 +1,75 @@
+C:\Users\fa83629\source\repos\HillCalculation\HillCalculation\bin\Debug\HillCalculation.exe.config
+C:\Users\fa83629\source\repos\HillCalculation\HillCalculation\bin\Debug\HillCalculation.exe
+C:\Users\fa83629\source\repos\HillCalculation\HillCalculation\bin\Debug\HillCalculation.pdb
+C:\Users\fa83629\source\repos\HillCalculation\HillCalculation\obj\Debug\HillCalculation.Hill.resources
+C:\Users\fa83629\source\repos\HillCalculation\HillCalculation\obj\Debug\HillCalculation.Properties.Resources.resources
+C:\Users\fa83629\source\repos\HillCalculation\HillCalculation\obj\Debug\HillCalculation.csproj.GenerateResource.cache
+C:\Users\fa83629\source\repos\HillCalculation\HillCalculation\obj\Debug\HillCalculation.csproj.CoreCompileInputs.cache
+C:\Users\fa83629\source\repos\HillCalculation\HillCalculation\obj\Debug\HillCalculation.exe
+C:\Users\fa83629\source\repos\HillCalculation\HillCalculation\obj\Debug\HillCalculation.pdb
+C:\Users\fa83629\source\repos\HillCalculation\HillCalculation\bin\Debug\OxyPlot.dll
+C:\Users\fa83629\source\repos\HillCalculation\HillCalculation\bin\Debug\OxyPlot.WindowsForms.dll
+C:\Users\fa83629\source\repos\HillCalculation\HillCalculation\bin\Debug\OxyPlot.xml
+C:\Users\fa83629\source\repos\HillCalculation\HillCalculation\bin\Debug\OxyPlot.WindowsForms.xml
+C:\Users\fa83629\source\repos\HillCalculation\HillCalculation\obj\Debug\HillCalculation.csproj.CopyComplete
+C:\Users\fa83629\source\repos\HillCalculation\HillCalculation\obj\Debug\HillCalculation.csprojAssemblyReference.cache
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert\HillCalculation\bin\Debug\HillCalculation.exe.config
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert\HillCalculation\bin\Debug\HillCalculation.exe
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert\HillCalculation\bin\Debug\HillCalculation.pdb
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert\HillCalculation\bin\Debug\OxyPlot.dll
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert\HillCalculation\bin\Debug\OxyPlot.WindowsForms.dll
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert\HillCalculation\bin\Debug\OxyPlot.xml
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert\HillCalculation\bin\Debug\OxyPlot.WindowsForms.xml
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert\HillCalculation\obj\Debug\HillCalculation.csprojAssemblyReference.cache
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert\HillCalculation\obj\Debug\HillCalculation.Hill.resources
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert\HillCalculation\obj\Debug\HillCalculation.Properties.Resources.resources
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert\HillCalculation\obj\Debug\HillCalculation.csproj.GenerateResource.cache
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert\HillCalculation\obj\Debug\HillCalculation.csproj.CoreCompileInputs.cache
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert\HillCalculation\obj\Debug\HillCalculation.csproj.CopyComplete
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert\HillCalculation\obj\Debug\HillCalculation.exe
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert\HillCalculation\obj\Debug\HillCalculation.pdb
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert - Kopie\HillCalculation\bin\Debug\HillCalculation.exe.config
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert - Kopie\HillCalculation\bin\Debug\HillCalculation.exe
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert - Kopie\HillCalculation\bin\Debug\HillCalculation.pdb
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert - Kopie\HillCalculation\bin\Debug\OxyPlot.dll
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert - Kopie\HillCalculation\bin\Debug\OxyPlot.WindowsForms.dll
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert - Kopie\HillCalculation\bin\Debug\OxyPlot.xml
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert - Kopie\HillCalculation\bin\Debug\OxyPlot.WindowsForms.xml
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert - Kopie\HillCalculation\obj\Debug\HillCalculation.csprojAssemblyReference.cache
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert - Kopie\HillCalculation\obj\Debug\HillCalculation.Hill.resources
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert - Kopie\HillCalculation\obj\Debug\HillCalculation.Properties.Resources.resources
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert - Kopie\HillCalculation\obj\Debug\HillCalculation.csproj.GenerateResource.cache
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert - Kopie\HillCalculation\obj\Debug\HillCalculation.csproj.CoreCompileInputs.cache
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert - Kopie\HillCalculation\obj\Debug\HillCalculation.csproj.CopyComplete
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert - Kopie\HillCalculation\obj\Debug\HillCalculation.exe
+C:\Users\fa83629\Desktop\HillCalculation-Funktioniert - Kopie\HillCalculation\obj\Debug\HillCalculation.pdb
+C:\Users\fa83629\Desktop\HillCalculation\HillCalculation\bin\Debug\HillCalculation.exe.config
+C:\Users\fa83629\Desktop\HillCalculation\HillCalculation\bin\Debug\HillCalculation.exe
+C:\Users\fa83629\Desktop\HillCalculation\HillCalculation\bin\Debug\HillCalculation.pdb
+C:\Users\fa83629\Desktop\HillCalculation\HillCalculation\bin\Debug\OxyPlot.dll
+C:\Users\fa83629\Desktop\HillCalculation\HillCalculation\bin\Debug\OxyPlot.WindowsForms.dll
+C:\Users\fa83629\Desktop\HillCalculation\HillCalculation\bin\Debug\OxyPlot.xml
+C:\Users\fa83629\Desktop\HillCalculation\HillCalculation\bin\Debug\OxyPlot.WindowsForms.xml
+C:\Users\fa83629\Desktop\HillCalculation\HillCalculation\obj\Debug\HillCalculation.csprojAssemblyReference.cache
+C:\Users\fa83629\Desktop\HillCalculation\HillCalculation\obj\Debug\HillCalculation.Hill.resources
+C:\Users\fa83629\Desktop\HillCalculation\HillCalculation\obj\Debug\HillCalculation.Properties.Resources.resources
+C:\Users\fa83629\Desktop\HillCalculation\HillCalculation\obj\Debug\HillCalculation.csproj.GenerateResource.cache
+C:\Users\fa83629\Desktop\HillCalculation\HillCalculation\obj\Debug\HillCalculation.csproj.CoreCompileInputs.cache
+C:\Users\fa83629\Desktop\HillCalculation\HillCalculation\obj\Debug\HillCalculation.csproj.CopyComplete
+C:\Users\fa83629\Desktop\HillCalculation\HillCalculation\obj\Debug\HillCalculation.exe
+C:\Users\fa83629\Desktop\HillCalculation\HillCalculation\obj\Debug\HillCalculation.pdb
+C:\Users\fa83629\Desktop\Ausbildung\HillCalculation\HillCalculation\bin\Debug\HillCalculation.exe.config
+C:\Users\fa83629\Desktop\Ausbildung\HillCalculation\HillCalculation\bin\Debug\HillCalculation.exe
+C:\Users\fa83629\Desktop\Ausbildung\HillCalculation\HillCalculation\bin\Debug\HillCalculation.pdb
+C:\Users\fa83629\Desktop\Ausbildung\HillCalculation\HillCalculation\bin\Debug\OxyPlot.dll
+C:\Users\fa83629\Desktop\Ausbildung\HillCalculation\HillCalculation\bin\Debug\OxyPlot.WindowsForms.dll
+C:\Users\fa83629\Desktop\Ausbildung\HillCalculation\HillCalculation\bin\Debug\OxyPlot.xml
+C:\Users\fa83629\Desktop\Ausbildung\HillCalculation\HillCalculation\bin\Debug\OxyPlot.WindowsForms.xml
+C:\Users\fa83629\Desktop\Ausbildung\HillCalculation\HillCalculation\obj\Debug\HillCalculation.csprojAssemblyReference.cache
+C:\Users\fa83629\Desktop\Ausbildung\HillCalculation\HillCalculation\obj\Debug\HillCalculation.Hill.resources
+C:\Users\fa83629\Desktop\Ausbildung\HillCalculation\HillCalculation\obj\Debug\HillCalculation.Properties.Resources.resources
+C:\Users\fa83629\Desktop\Ausbildung\HillCalculation\HillCalculation\obj\Debug\HillCalculation.csproj.GenerateResource.cache
+C:\Users\fa83629\Desktop\Ausbildung\HillCalculation\HillCalculation\obj\Debug\HillCalculation.csproj.CoreCompileInputs.cache
+C:\Users\fa83629\Desktop\Ausbildung\HillCalculation\HillCalculation\obj\Debug\HillCalculation.csproj.CopyComplete
+C:\Users\fa83629\Desktop\Ausbildung\HillCalculation\HillCalculation\obj\Debug\HillCalculation.exe
+C:\Users\fa83629\Desktop\Ausbildung\HillCalculation\HillCalculation\obj\Debug\HillCalculation.pdb
