@@ -47,6 +47,7 @@ namespace HillCalculation
         public Vector[,] MeasuringPoints { get => measuringPoints; set => measuringPoints = value; }
 
 
+
         private void SelectFileToolStripMenu_Click(object sender, EventArgs e)
         {
             OpenFileDialog openDlg = new OpenFileDialog() {};
